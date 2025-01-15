@@ -41,6 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - Made this next.js application
 - Made basic Nav and basic pages
-  For future reference, reusable components like the nav should be made in the components folder. Also, work on page.js for the different pages, the page.js inside app is the home and any component like the nave that should be on every page should go into the layout.js.
+
+For future reference, reusable components like the nav should be made in the components folder. Also, work on page.js for the different pages, the page.js inside app is the home and any component like the nave that should be on every page should go into the layout.js.
 
 **Please ask me about anything concerning project setup and contact Chloe for anything about the design**
