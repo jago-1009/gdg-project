@@ -1,0 +1,27 @@
+.mainNav {
+  height: 80px;
+  background-color: red;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainNav ul {
+  width: 100%;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainNav ul li {
+}
+
+.mainNav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}

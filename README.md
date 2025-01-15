@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### Future Collaboration
+
+#### CJ
+
+- Made this next.js application
+- Made basic Nav and basic pages
+  For future reference, reusable components like the nav should be made in the components folder. Also, work on page.js for the different pages, the page.js inside app is the home and any component like the nave that should be on every page should go into the layout.js.
+
+**Please ask me about anything concerning project setup and contact Chloe for anything about the design**
