@@ -1,11 +1,11 @@
 .mainNav {
   height: 80px;
-  background-color: red;
+  background-color: lightgrey;
   width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .mainNav ul {
@@ -16,7 +16,10 @@
   align-items: center;
   justify-content: space-around;
 }
-
+.logo {
+  justify-content: flex-end !important;
+  margin-right:10%;
+}
 .mainNav ul li {
 }
 

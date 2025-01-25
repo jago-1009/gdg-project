@@ -20,6 +20,9 @@ export default function Nav() {
           <Link href="/officers">Officers</Link>
         </li>
       </ul>
+      <ul className={navStyles.logo}>
+        <li>LOGO</li>
+      </ul>
     </nav>
   );
 }
