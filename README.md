@@ -1,47 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# create-svelte
 
-## Getting Started
+Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-First, run the development server:
+Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Building
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build your library:
 
-## Learn More
+```bash
+npm run package
+```
 
-To learn more about Next.js, take a look at the following resources:
+To create a production version of your showcase app:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can preview the production build with `npm run preview`.
 
-## Deploy on Vercel
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Publishing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
 
-### Future Collaboration
+To publish your library to [npm](https://www.npmjs.com):
 
-#### CJ
-
-- Made this next.js application
-- Made basic Nav and basic pages
-
-For future reference, reusable components like the nav should be made in the components folder. Also, work on page.js for the different pages, the page.js inside app is the home and any component like the nave that should be on every page should go into the layout.js.
-
-**Please ask me about anything concerning project setup and contact Chloe for anything about the design**
+```bash
+npm publish
+```
