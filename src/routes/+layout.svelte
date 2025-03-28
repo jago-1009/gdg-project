@@ -41,6 +41,22 @@ import Image from '$lib/assets/favicon.png';
         justify-content: space-evenly;
         width: 50%;
     }
+    footer {
+        height:50px;
+        margin-top:5%;
+        background-color: var(--main-color);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .signin {
+        color: white;
+        text-decoration: underline;
+    }
 </style>
 
 <nav>
@@ -59,5 +75,7 @@ import Image from '$lib/assets/favicon.png';
 {@render children()}
 
 <footer>
-    <p>Footer</p>
+    <p>Copyright 2025 &#64; Game Developer's Group</p>
+    <p>This site was created by the Web Design and Development Assn. (WDDA)</p>
 </footer>
+

@@ -1,16 +1,18 @@
 <script>
-let {subtitle, joinHref} = $props();
+let {title,subtitle, joinHref, joinButton} = $props();
 </script>
     
     
     <div class="hero">
         <main class="title">
-        <h2>Game Developer's Group at IU Indianapolis</h2>
+        <h2>{title}</h2>
         </main>
         <aside class="subtitle">
             <p>{subtitle}</p>
         </aside>
+        {#if joinButton == 'true'}
         <a href={joinHref}>Join our Discord</a>
+        {/if}
     </div>
 
     
